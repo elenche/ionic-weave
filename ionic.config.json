@@ -1,0 +1,7 @@
+{
+  "name": "ionic-weave",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
