@@ -6,7 +6,11 @@ const routes: Routes = [
   {
     path: '',
     component: Tab2Page,
-  }
+  },
+	{
+		path: 'menu',
+		loadChildren: () => import('./menu/menu.module').then(m => m.MenuPageModule)
+	},
 ];
 
 @NgModule({

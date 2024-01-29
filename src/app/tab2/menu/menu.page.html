@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab2"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Weave Menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Embed Weave online ordering component -->
+  <weave-ordering display-items="product" [location]="locationID"></weave-ordering>
+</ion-content>

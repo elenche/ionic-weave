@@ -1,17 +1,19 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Order
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Select store</ion-label>
+    </ion-list-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <ion-item detail (click)="selectStore('93a675d0-c3f2-45b1-be79-e4be5cf5d0b1')">
+      <ion-label>Weave - Med and Rec</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
