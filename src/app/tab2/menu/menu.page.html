@@ -1,4 +1,17 @@
-<ion-header>
+<!-- NOTE: implementation without using Ionic components (ion-header and ion-content)  -->
+<div id="nav-header">
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="tabs/tab2"></ion-back-button>
+  </ion-buttons>
+
+  <span>Weave Menu</span>
+</div>
+
+<!-- Embed Weave online ordering component -->
+<weave-ordering display-items="product" [location]="locationID" user-phone="7305554321"></weave-ordering>
+
+<!-- NOTE: implementation using Ionic components and "stickTo" attribute -->
+<!-- <ion-header id="nav-header">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="tabs/tab2"></ion-back-button>
@@ -9,6 +22,6 @@
 </ion-header>
 
 <ion-content>
-  <!-- Embed Weave online ordering component -->
-  <weave-ordering display-items="product" [location]="locationID"></weave-ordering>
-</ion-content>
+  <weave-ordering display-items="product" [location]="locationID" stickTo="#nav-header"
+    user-phone="7305554321"></weave-ordering>
+</ion-content> -->
