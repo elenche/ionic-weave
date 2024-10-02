@@ -26,14 +26,18 @@ Code in: `menu.page.html`
 
 ## Usage
 
-1. Add additional testing stores with unique location IDs in `tab2.page.html`.
+1. (Optional) Add additional testing stores with unique location IDs to the property `stores` in `tab2.page.ts`.
 
 Example:
 
 ```
-<ion-item detail (click)="selectStore('44da9ce1-7817-4754-b10a-f11b4dbd1965')">
-	<ion-label> Weave - Illinois </ion-label>
-</ion-item>
+stores: [{ name: string; locationID: string }] = [
+	{ name: 'Weave - Med and Rec', locationID: '93a675d0-c3f2-45b1-be79-e4be5cf5d0b1' },
+	{ name: 'Weave - Illinois', locationID: '44da9ce1-7817-4754-b10a-f11b4dbd1965' }
+];
 ```
 
-2. Run the app using `ionic serve` or `ng serve`.
+2. Run the app:
+	- Web: run `ionic serve` to open in browser
+	- iOS: run `ionic capacitor build ios` which will open XCode where you can select a run destination
+	- Android: run `ionic capacitor build android` which will open Android Studio where you can select a run destination
