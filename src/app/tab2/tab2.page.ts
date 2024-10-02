@@ -10,6 +10,10 @@ export class Tab2Page implements OnInit {
 
 	isWeaveLoaded: boolean = false;
 
+	stores: [{ name: string; locationID: string }] = [
+		{ name: 'Weave - Med and Rec', locationID: '93a675d0-c3f2-45b1-be79-e4be5cf5d0b1' }
+	];
+
 	constructor(private navCtrl: NavController) { }
 
 	ngOnInit() {
